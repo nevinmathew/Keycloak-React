@@ -1,0 +1,26 @@
+version: '3.7'
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:22.0.1
+    environment:
+      - KEYCLOAK_USER=user
+      - KEYCLOAK_PASSWORD=user
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./mythemes:/opt/keycloak/themes/mythemes
+    command: start-dev
+
+  # react-vite-app:
+  #   build:
+  #     context: ./Keycloak-React
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - '5173:5173'
+  #   # volumes:
+  #   #   - ./Keycloak-React:/
+  #   depends_on:
+  #     - keycloak

@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.card {
+  padding: 2em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #234;
+  color: white;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-list div {
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
